@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.logo{
+    font-size: 2rem;
+    margin: 1rem 0 1rem 2rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+li{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu-icon{
+    display: none;
+}
+@media screen and (max-width:1200px){
+    header{
+        background-color: black;
+        height: 40vh;
+    }
+ 
+    .mobileNavbar{
+        display:block;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        margin-top:200px;
+        height: 100vh;   
+        text-align: center;
+    }
+    .noMobileNavbar{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    ul li {
+        padding: 5px;
+    }
+    ul li a{
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 40px;
+        margin: 5px 13px 0px 0px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        right: 0;
+    }
+}
